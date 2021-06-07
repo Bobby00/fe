@@ -1,0 +1,39 @@
+.owl-nav {
+	display: none;
+}
+
+.navbar-brand img {
+	height: 50px;
+}
+
+.w8-200 {
+	font-weight: 200;
+}
+
+.w8-800 {
+	font-weight: 800;
+}
+
+.card-body {
+	padding: 0.5rem;
+}
+
+.meal-title {
+	font-size: 18px;
+	font-weight: 800;
+	margin-bottom: 0.1rem;
+}
+
+.meal-description {
+	font-size: 14px;
+}
+
+.meal-price {
+	font-weight: 900;
+}
+
+.owl-carousel .owl-item img {
+	width: 90%!important;
+	margin-left: auto;
+	margin-right: auto;
+}
