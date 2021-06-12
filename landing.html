@@ -46,6 +46,7 @@
 <!-- Pixel CSS -->
 <link type="text/css" href="css/neumorphism.css" rel="stylesheet">
 
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'>
 
 <!-- CUSTOM CSS -->
 <link type="text/css" href="css/custom.css" rel="stylesheet">
@@ -187,7 +188,7 @@
             </div>
             <div class="d-flex align-items-center">
                 <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fas fa-ellipsis-h fa-2x"></span>
+                    <span style="font-size: 30px;" class="fas fa-ellipsis-h fa-2x"></span>
                 </button>
             </div>
         </div>
@@ -195,8 +196,8 @@
 </header>
     <main>
         <!-- Hero -->
-        <div class="section section-header pb-7">
-            <div class="container">
+        <div class="section section-header pb-2">
+            <div class="container cstm-overflow-main">
                 <div class="row justify-content-center">
                     <div class="col-2">
                         <i class="far fa-user-circle fa-3x"></i>
@@ -223,29 +224,151 @@
         <section class="section section-lg pt-0">
             <div class="container p-0">
 
-                <!-- START OF RESTAURANT CAROUSEL -->
 
-                <h3>Top Rated Restaurants</h3>
-                <div class="restaurants-carousel owl-carousel owl-theme mt-2 mb-4">
+                <!-- START OF CATEGORIES CAROUSEL -->
+                <h3 class="mt-5">Categories</h3>
+                <i class=""></i>
+                <div class="category-carousel owl-carousel owl-theme mt-3">
                     <!-- Item 1 -->
                     <div class="item p-1">
                         <div class="card bg-primary shadow-soft border-light">
-                            <img src="../../assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-xl p-2" alt="Bonnie portrait">
+                            <img src="assets/img/fries.png" class="card-img-top rounded-xl" alt="Bonnie portrait">
+                            <div class="card-body card-body-category text-center">
+                                <p class="category-title">Fries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="item p-1">
+                        <div class="card bg-primary shadow-soft border-light">
+                            <img src="assets/img/chicken.png" class="card-img-top rounded-xl" alt="Bonnie portrait">
+                            <div class="card-body card-body-category text-center">
+                                <p class="category-title">Kienyeji</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="item p-1">
+                        <div class="card bg-primary shadow-soft border-light">
+                            <img src="assets/img/burger.png" class="card-img-top rounded-xl" alt="Bonnie portrait">
+                            <div class="card-body card-body-category text-center">
+                                <p class="category-title">Fish</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="item p-1">
+                        <div class="card bg-primary shadow-soft border-light">
+                            <img src="assets/img/burger.png" class="card-img-top rounded-xl" alt="Bonnie portrait">
+                            <div class="card-body card-body-category text-center">
+                                <p class="category-title">Burgers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="item p-1">
+                        <div class="card bg-primary shadow-soft border-light">
+                            <img src="assets/img/burger.png" class="card-img-top rounded-xl" alt="Bonnie portrait">
+                            <div class="card-body card-body-category text-center">
+                                <p class="category-title">Pizza</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END OF CATEGORIES CAROUSEL -->
+
+
+                <!-- START OF NEARBY RESTAURANT CAROUSEL -->
+
+                <h3 class="mt-5">Nearby Restaurants</h3>
+                <div class="near-restaurants-carousel owl-carousel owl-theme mt-3 mb-4">
+                    <!-- Item 1 -->
+                    <div class="item p-1">
+                        <div class="card bg-primary shadow-soft border-light">
+                            <div class="row">
+                                <div class="col-4 no-pad">
+                                    <img src="assets/img/businesses/moriah.jpg" class="card-img-top cstm-roundend-brdr p-1" alt="Business Logo">
+                                </div>
+                                <div class="col-8 no-pad-left">
+                                    <div class="card-body cstm-card-body cstm-card-1 text-left">
+                                        <p class="business-title">Moriah Grille</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mt-2" type="button">Eat Here</button>
                             
                         </div>
                     </div>
                     <!-- Item 2 -->
                     <div class="item p-1">
                         <div class="card bg-primary shadow-soft border-light">
-                            <img src="../../assets/img/team/profile-picture-1.jpg" class="card-img-top rounded-xl p-2" alt="Neil portrait">
-                            
+                            <div class="row">
+                                <div class="col-4 no-pad">
+                                    <img src="assets/img/businesses/cafe-leo.jpg" class="card-img-top cstm-roundend-brdr p-1" alt="Business Logo">
+                                </div>
+                                <div class="col-8 no-pad-left">
+                                    <div class="card-body cstm-card-body cstm-card-1 text-left">
+                                        <p class="business-title">Cafe Leo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mt-2" type="button">Eat Here</button>
                         </div>
                     </div>
                     <!-- Item 3 -->
                     <div class="item p-1">
                         <div class="card bg-primary shadow-soft border-light">
-                            <img src="../../assets/img/team/profile-picture-2.jpg" class="card-img-top rounded-xl p-2" alt="Jose portrait">
-                            
+                            <div class="row">
+                                <div class="col-4 no-pad">
+                                    <img src="assets/img/businesses/moriah.jpg" class="card-img-top cstm-roundend-brdr p-1" alt="Business Logo">
+                                </div>
+                                <div class="col-8 no-pad-left">
+                                    <div class="card-body cstm-card-body cstm-card-1 text-left">
+                                        <p class="business-title">Mohaz fast food stand</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mt-2" type="button">Eat Here</button> 
+                        </div>
+                    </div>
+                </div>          
+
+                <!-- END OF NEARBY RESTAURANT CAROUSEL -->
+
+
+                <!-- START OF RESTAURANT CAROUSEL -->
+
+                <h3 class="mt-5">Top Rated Restaurants</h3>
+                <div class="restaurants-carousel owl-carousel owl-theme mt-3 mb-4">
+                    <!-- Item 1 -->
+                    <div class="item p-1">
+                        <div class="card bg-primary shadow-soft border-light">
+                            <img style="width: 70%!important;" src="assets/img/businesses/moriah.jpg" class="card-img-top cstm-roundend-brdr p-1" alt="Bonnie portrait">
+                            <div class="card-body cstm-card-body text-center">
+                                <p class="business-title">Moriah Chicken Grille</p>
+                                <button class="btn btn-primary mt-2" type="button">Eat Here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="item p-1">
+                        <div class="card bg-primary shadow-soft border-light">
+                            <img style="width: 70%!important;" src="assets/img/businesses/cafe-leo.jpg" class="card-img-top cstm-roundend-brdr p-1" alt="Bonnie portrait">
+                            <div class="card-body cstm-card-body text-center">
+                                <p class="business-title">Cafe Leo</p>
+                                <button class="btn btn-primary mt-2" type="button">Eat Here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="item p-1">
+                        <div class="card bg-primary shadow-soft border-light">
+                            <img style="width: 70%!important;" src="assets/img/businesses/moriah.jpg" class="card-img-top cstm-roundend-brdr p-1" alt="Bonnie portrait">
+                            <div class="card-body cstm-card-body text-center">
+                                <p class="business-title">Mohaz fast food stand</p>
+                                <button class="btn btn-primary mt-2" type="button">Eat Here</button>
+                            </div>
                         </div>
                     </div>
                 </div>          
@@ -253,8 +376,9 @@
                 <!-- END OF RESTAURANT CAROUSEL -->
 
                 <!-- START OF MEALS CAROUSEL -->
-                <h3>Popular Meals</h3>
-                <div class="food-carousel owl-carousel owl-theme">
+                <h3 class="mt-5">Popular Meals</h3>
+                <i class=""></i>
+                <div class="food-carousel owl-carousel owl-theme mt-3">
                     <!-- Item 1 -->
                     <div class="item p-1">
                         <div class="card bg-primary shadow-soft border-light">
@@ -282,10 +406,10 @@
                     <!-- Item 3 -->
                     <div class="item p-1">
                         <div class="card bg-primary shadow-soft border-light">
-                            <img src="assets/img/fries.png" class="card-img-top rounded-xl" alt="Bonnie portrait">
+                            <img src="assets/img/burger.png" class="card-img-top rounded-xl" alt="Bonnie portrait">
                             <div class="card-body text-center">
-                                <p class="meal-title">Fries</p>
-                                <span class="meal-description">Regular Fries</span>
+                                <p class="meal-title">Burger</p>
+                                <span class="meal-description">Juicy Beef burger</span>
                                 <p class="meal-price">Ksh 100</p>
                                 <button class="btn btn-primary" type="button">Add</button>
                             </div>
@@ -299,11 +423,47 @@
             </div>
         </section>
         <!-- Section -->
+
+        <section>
         
+            <div class="bottom-navbar">
+                <div class="con-effect">
+                    <div class="effect"></div>
+                </div>
+                <button class="active">
+                    <i class='bx bx-home'></i>
+                </button>
+                <button>
+                    <i class='bx bx-chat' ></i>
+                </button>
+                <button 
+                    onclick="handleClickPlus(event)"
+                    class="float">
+                    <i class='bx bx-plus' ></i>
+                </button>
+                <button>
+                    <i class='bx bx-shopping-bag' ></i>
+                </button>
+                <button>
+                    <i class='bx bx-user' ></i>
+                </button>
+            </div>
+            <div class="container-cstm">
+                <img src="/pc.png" alt="">
+                <p>
+                    Your food instantly at your home, faster food tastier food
+                </p>
+                <button>
+                    Buy food
+                </button>
+            </div>
+
+        </section>
         
     </main>
 
     <footer class="d-flex pt-md-7 border-top border-light bg-primary">
+
     </footer>
 
     <!-- Core -->
@@ -354,10 +514,10 @@
 
 $('.restaurants-carousel').owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 5,
     nav: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
+    autoplay: false,
+    autoplayTimeout: 5000,
     dots: false,
     responsive: {
         0: {
@@ -375,7 +535,145 @@ $('.restaurants-carousel').owlCarousel({
         '<i class="fas fa-chevron-right"></i>'
     ]
 });
+
+$('.near-restaurants-carousel').owlCarousel({
+    loop: true,
+    margin: 5,
+    nav: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    dots: false,
+    responsive: {
+        0: {
+            items: 2
+        },
+        600: {
+            items: 6
+        },
+        1000: {
+            items: 6
+        }
+    },
+    navText: [
+        '<i class="fas fa-chevron-left"></i>',
+        '<i class="fas fa-chevron-right"></i>'
+    ]
+});
+
+$('.category-carousel').owlCarousel({
+    loop: true,
+    margin: 5,
+    nav: true,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    dots: false,
+    responsive: {
+        0: {
+            items: 4
+        },
+        600: {
+            items: 6
+        },
+        1000: {
+            items: 6
+        }
+    },
+    navText: [
+        '<i class="fas fa-chevron-left"></i>',
+        '<i class="fas fa-chevron-right"></i>'
+    ]
+});
+
+
+
+    const buttons = document.querySelectorAll('.bottom-navbar button:not(.float)')
+    const effect = document.querySelector('.effect')
+    const container = document.querySelector('.container-cstm')
+    let y = 0
+    let moveY = 0
+    let open = false
+
+    const vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+    setTimeout(function () {
+      window.scrollTo(0, 1)
+    }, 0)
+    
+    window.addEventListener('touchstart', (evt) => {
+        const area = window.innerHeight - evt.touches[0].clientY
+        y = area
+        console.log(y)
+    })
+
+    window.addEventListener('touchend', (evt) => {
+        y = 0
+        console.log(moveY)
+        if (moveY > (window.innerHeight / 4)) {
+            anime({
+                targets: '.container-cstm',
+                translateY: `-${window.innerHeight / 2}px`,
+                duration: 600,
+            })
+            open = true
+        } else {
+            anime({
+                targets: '.container-cstm',
+                translateY: `0px`,
+                duration: 600,
+                easing: 'easeOutExpo'
+            })
+            open = false
+        }
+    })
+
+    window.addEventListener('touchmove', (evt) => {
+        moveY = (window.innerHeight - y) - evt.touches[0].clientY
+        console.log(y)
+        if (!open) {
+            anime({
+                targets: '.container-cstm',
+                translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
+                duration: 200,
+            })
+        } else if (open) {
+            moveY = moveY + window.innerHeight / 2
+            anime({
+                targets: '.container-cstm',
+                translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
+                duration: 200,
+            })
+        }
+    })
+
+    buttons.forEach((item) => {
+        item.addEventListener('click', (evt) => {
+            const x = evt.target.offsetLeft
+            buttons.forEach((btn) => { btn.classList.remove('active') })
+            evt.target.classList.add('active')
+            anime({
+                targets: '.effect',
+                left: `${x}px`,
+                duration: 600,
+            })
+        })
+    })
+
+    function handleClickPlus(evt) {
+        anime({
+            targets: '.container-cstm',
+            translateY: `-${window.innerHeight / 2}px`,
+            duration: 600,
+        })
+        open = true
+        y = window.innerHeight / 2
+        moveY = moveY + window.innerHeight / 2
+    }
+
+
+
 </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
 
 <!-- Neumorphism JS -->
 <script src="assets/js/neumorphism.js"></script>
