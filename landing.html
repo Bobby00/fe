@@ -599,51 +599,51 @@ $('.category-carousel').owlCarousel({
       window.scrollTo(0, 1)
     }, 0)
     
-    window.addEventListener('touchstart', (evt) => {
-        const area = window.innerHeight - evt.touches[0].clientY
-        y = area
-        console.log(y)
-    })
-
-    window.addEventListener('touchend', (evt) => {
-        y = 0
-        console.log(moveY)
-        if (moveY > (window.innerHeight / 4)) {
-            anime({
-                targets: '.container-cstm',
-                translateY: `-${window.innerHeight / 2}px`,
-                duration: 600,
-            })
-            open = true
-        } else {
-            anime({
-                targets: '.container-cstm',
-                translateY: `0px`,
-                duration: 600,
-                easing: 'easeOutExpo'
-            })
-            open = false
-        }
-    })
-
-    // window.addEventListener('touchmove', (evt) => {
-    //     moveY = (window.innerHeight - y) - evt.touches[0].clientY
+    // window.addEventListener('touchstart', (evt) => {
+    //     const area = window.innerHeight - evt.touches[0].clientY
+    //     y = area
     //     console.log(y)
-    //     if (!open) {
+    // })
+
+    // window.addEventListener('touchend', (evt) => {
+    //     y = 0
+    //     console.log(moveY)
+    //     if (moveY > (window.innerHeight / 4)) {
     //         anime({
     //             targets: '.container-cstm',
-    //             translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
-    //             duration: 200,
+    //             translateY: `-${window.innerHeight / 2}px`,
+    //             duration: 600,
     //         })
-    //     } else if (open) {
-    //         moveY = moveY + window.innerHeight / 2
+    //         open = true
+    //     } else {
     //         anime({
     //             targets: '.container-cstm',
-    //             translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
-    //             duration: 200,
+    //             translateY: `0px`,
+    //             duration: 600,
+    //             easing: 'easeOutExpo'
     //         })
+    //         open = false
     //     }
     // })
+
+    // // window.addEventListener('touchmove', (evt) => {
+    // //     moveY = (window.innerHeight - y) - evt.touches[0].clientY
+    // //     console.log(y)
+    // //     if (!open) {
+    // //         anime({
+    // //             targets: '.container-cstm',
+    // //             translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
+    // //             duration: 200,
+    // //         })
+    // //     } else if (open) {
+    // //         moveY = moveY + window.innerHeight / 2
+    // //         anime({
+    // //             targets: '.container-cstm',
+    // //             translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
+    // //             duration: 200,
+    // //         })
+    // //     }
+    // // })
 
     buttons.forEach((item) => {
         item.addEventListener('click', (evt) => {
