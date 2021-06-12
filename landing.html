@@ -626,24 +626,24 @@ $('.category-carousel').owlCarousel({
         }
     })
 
-    window.addEventListener('touchmove', (evt) => {
-        moveY = (window.innerHeight - y) - evt.touches[0].clientY
-        console.log(y)
-        if (!open) {
-            anime({
-                targets: '.container-cstm',
-                translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
-                duration: 200,
-            })
-        } else if (open) {
-            moveY = moveY + window.innerHeight / 2
-            anime({
-                targets: '.container-cstm',
-                translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
-                duration: 200,
-            })
-        }
-    })
+    // window.addEventListener('touchmove', (evt) => {
+    //     moveY = (window.innerHeight - y) - evt.touches[0].clientY
+    //     console.log(y)
+    //     if (!open) {
+    //         anime({
+    //             targets: '.container-cstm',
+    //             translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
+    //             duration: 200,
+    //         })
+    //     } else if (open) {
+    //         moveY = moveY + window.innerHeight / 2
+    //         anime({
+    //             targets: '.container-cstm',
+    //             translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
+    //             duration: 200,
+    //         })
+    //     }
+    // })
 
     buttons.forEach((item) => {
         item.addEventListener('click', (evt) => {
